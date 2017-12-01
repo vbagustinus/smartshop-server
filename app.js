@@ -25,7 +25,7 @@ app.use('/products', products);
 app.use('/customers', customers);
 app.use('/transactions', transactions);
 
-app.listen(3000,(err)=>{
+app.listen(process.env.PORT || '3000',(err)=>{
   if(!err){
     console.log('Jalan di port 3000');
   } else {
